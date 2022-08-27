@@ -7,6 +7,7 @@
 ============================
 ]]
 
+local conjure = {"魔法红宝石","魔法黄水晶","魔法翡翠","魔法玛瑙"}
 local gem = {"法力红宝石","法力黄水晶","法力翡翠","法力玛瑙"}
 local function checkGem(gem) 
     local f,v
@@ -20,7 +21,7 @@ local function checkGem(gem)
 end
 
 function ConjureGem()
-    for _,v in ipairs (gem) do
+    for _,v in ipairs (conjure) do
         checkGem(v)
     end
 end
